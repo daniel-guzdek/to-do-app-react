@@ -1,0 +1,178 @@
+/* font-family: 'IBM Plex Mono', monospace; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --first-font-color: rgb(14, 230, 245);
+  --second-font-color: rgb(14, 245, 187);
+  --first-background-color: rgb(2, 20, 26);
+  --second-background-color: rgb(24, 24, 24);
+}
+
+.app-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 20px;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--first-background-color);
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--first-font-color);
+}
+
+.main-title {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.main-subtitle {
+  padding: 20px 0;
+}
+
+input {
+  padding: 5px 10px;
+  background-color: var(--second-background-color);
+  color: var(--first-font-color);
+  border: 1px dotted var(--first-font-color);
+}
+
+input:active {
+  border: 1px solid var(--first-font-color);
+}
+
+input:focus {
+  border: 1px solid var(--first-font-color);
+}
+
+::placeholder {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  color: yellow;
+}
+
+input[type='date'] {
+  margin: 10px;
+  background-color: var(--second-background-color);
+  color: var(--first-font-color);
+}
+::-webkit-calendar-picker-indicator { background-color: var(--first-font-color); }
+
+.dateLabel {
+  margin-left: 0;
+}
+
+@media (max-width: 710px) {
+  .deadline-value {
+    font-size: 12px;
+  }
+}
+
+#priority {
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.priority-label {
+  margin-left: 10px;
+}
+
+.btnAdd {
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 5px 40px;
+  font-size: 20px;
+  background-color: var(--first-background-color);
+  color: var(--first-font-color);
+  border: 1px solid var(--first-font-color);
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btnAdd:hover {
+  background-color: var(--second-background-color);
+}
+
+.tasks-active, .tasks-done {
+  margin: 20px 0;
+}
+
+ul {
+  margin: 30px auto;
+  width: 60%;
+  border-top: 1px dashed var(--first-font-color);
+  border-bottom: 1px dashed var(--first-font-color);
+  padding-bottom: 30px;
+}
+
+@media (max-width: 1080px) {
+  ul {
+    width: 80%;
+  }
+}
+
+@media (max-width: 822.99px) {
+  ul {
+    width: 95%;
+  }
+}
+
+.tasks-active {
+  margin: 20px 0;
+}
+
+.tasks-done ul {
+  border-top: none;
+}
+
+.singleTask-container {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.singleTask {
+  display: inline;
+  font-size: 13px;
+  margin-right: 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  color: yellow;
+}
+
+.tasks-active ul h2 {
+  margin: 20px auto;
+}
+
+em {
+  font-size: 35px;
+  margin-left: 20px;
+  font-style: normal;
+}
+
+.numberOfActiveTasks {
+  color: rgb(255, 21, 68);
+}
+
+.numberOfDoneTasks {
+  color: rgb(78, 255, 78);
+}
+
+.btnDone, .btnRemove {
+  margin: 10px auto;
+  margin-left: 8px;
+  padding: 3px 5px;
+  border: 1px dotted;
+  background-color: var(--second-background-color);
+  cursor: pointer;
+}
+
+.btnDone {
+  color: var(--first-font-color);
+}
+
+.btnRemove {
+  color: rgb(255, 21, 68);
+}
