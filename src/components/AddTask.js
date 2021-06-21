@@ -71,7 +71,7 @@ class AddTask extends React.Component {
         return(
             <React.Fragment>
                 <h2 className="main-subtitle">Add Task to The List</h2>
-                <input type="text" id="tasksInput" placeholder="write task to add ..." value={this.state.taskName} onChange={this.handleGetTask}/>
+                <input type="text" id="tasksInput" placeholder="write a task to add ..." value={this.state.taskName} onChange={this.handleGetTask}/>
                 <label htmlFor="priority" className="priority-label"><input type="checkbox" checked={this.state.priority} id="priority" onChange={this.handlePriorityChange}/>Priority</label>
                 <br/>
                 {this.state.error ? <span style={{color: `rgb(255, 21, 68)`, fontSize: "13px", marginLeft: 0}}>{this.info.empty_input}</span> : null}

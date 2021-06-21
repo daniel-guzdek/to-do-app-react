@@ -23,7 +23,7 @@ const Task = (props)=> {
       <li className="singleTask-container">
         <h3 className="singleTask">Task no. {props.task.id + 1} {props.task.taskName}</h3><em style={{fontSize: "13px"}}> (deadline: {props.task.date})</em>
         <br/>
-        - Fixed on: <span>{finishTerm}</span>
+        - Done: <span>{finishTerm}</span>
 
         <button className="btnRemove" onClick={()=> props.deleteTask(props.task.id)}>X</button>
       </li>
